@@ -122,8 +122,6 @@ Disabled during v0.1.x releases.
     clippy::redundant_field_names
 )]
 
-#[cfg(feature = "full")]
-pub mod ffi_api;
 pub mod numerical;
 #[cfg(feature = "full")]
 pub mod output;
@@ -133,3 +131,8 @@ pub mod physics;
 pub mod plugins;
 pub mod prelude;
 pub mod symbolic;
+
+#[cfg(feature = "full")]
+pub mod ffi_api;
+
+
